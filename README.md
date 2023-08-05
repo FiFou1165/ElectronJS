@@ -2,7 +2,7 @@
 <img style="width: 80px" src="https://image.noelshack.com/fichiers/2023/31/6/1691251956-image-2023-08-05-181236838.png">
 
 <h1> ElectronJS repository to start ! </h1>
-before continuing please install NodeJS<br><br>
+before continuing please install <a href="https://nodejs.org/fr">NodeJS</a><br><br>
 
 <pre style="margin: 0 0 16px">node -v</pre>
 
@@ -20,7 +20,7 @@ before continuing please install NodeJS<br><br>
   }
 }</code></pre><br>
 
-<h4>(5) main.js </h4>
+<h4>(5) create main.js </h4>
 <pre>
 const { app, BrowserWindow } = require('electron')
 const path = require('path')
@@ -55,7 +55,7 @@ app.on('window-all-closed', () => {
 })</code></pre>
 
 
-<h4>(6) preload.js </h4><br>
+<h4>(6) create preload.js </h4><br>
 
 <pre>
 <code>window.addEventListener('DOMContentLoaded', () => {
@@ -69,3 +69,6 @@ app.on('window-all-closed', () => {
   }
 })</code>
 </pre>
+
+<h4>(6) create index.html </h4>
+if you want to use php, in the main.js you will have to change the <code>win.loadFile('index.html')</code> by <code>win.loadURL('http://localhost') </code>for example
